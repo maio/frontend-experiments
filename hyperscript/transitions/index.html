@@ -6,10 +6,12 @@
     <title>Hyperscript Starter</title>
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
 </head>
-<body>
+<body _="
+    on mutation of @_
+        beep! 'changed'">
     <div _="
         init
-            transition my font-size to 30px over 3s
+            transition my font-size to 30px over 1s
             transition my left-padding to 500px over 3s
     " style="font-size: 300px;">😃</div>
 </body>
