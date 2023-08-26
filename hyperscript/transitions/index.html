@@ -19,12 +19,12 @@
             repeat forever
                 get my *computed-width as an Int
                 set maxLeft to window.innerWidth - it
-                transition my margin-left to `${maxLeft}px` over 500ms
+                transition my margin-left to `${maxLeft}px` over 1s
                 get my *computed-height as an Int
                 set maxTop to window.innerHeight - it
-                transition my margin-top to `${maxTop}px` over 500ms
-                transition my margin-left to 0px over 500ms
-                transition my margin-top to 0px over 500ms
+                transition my margin-top to `${maxTop}px` over 1s
+                transition my margin-left to 0px over 1s
+                transition my margin-top to 0px over 1s
             end
         " style="font-size: 60px;" class="d-inline-block ">😃</div>
 </body>
