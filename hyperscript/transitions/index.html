@@ -17,7 +17,8 @@
     <div _="
         init
             transition my font-size to 30px over 1s
-            set maxLeft to window.innerWidth - beep! my *computed-width
+            get my *computed-width as an Int
+            set maxLeft to window.innerWidth - it
             transition my margin-left to `${maxLeft}px` over 1s
         " style="font-size: 300px;" class="d-inline-block ">😃</div>
 </body>
