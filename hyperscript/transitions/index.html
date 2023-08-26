@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperscript Starter</title>
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </head>
+
 <body _="
     on mutation of @_ from body
         beep! 'changed', event">
@@ -14,9 +21,9 @@
             transition my font-size to 30px over 1s
             transition my left-padding to 500px over 3s
         on mutation of @_
-            beep! 'changed _'"
-    " style="font-size: 300px;">😃</div>
+            beep! 'changed _'" " style=" font-size: 300px;">😃</div>
 
     <button _="on click call _hyperscript.processNode(document.body)">Process</button>
 </body>
+
 </html>
