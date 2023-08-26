@@ -20,6 +20,9 @@
             get my *computed-width as an Int
             set maxLeft to window.innerWidth - it
             transition my margin-left to `${maxLeft}px` over 1s
+            get my *computed-height as an Int
+            set maxTop to window.innerHeight - it
+            transition my margin-top to `${maxTop}px` over 1s
         " style="font-size: 300px;" class="d-inline-block ">😃</div>
 </body>
 
