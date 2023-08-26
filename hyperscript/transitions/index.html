@@ -7,12 +7,14 @@
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
 </head>
 <body _="
-    on mutation of anything from body
+    on mutation of @_ from body
         beep! 'changed', event">
     <div _="
         init
             transition my font-size to 30px over 1s
             transition my left-padding to 500px over 3s
+        on mutation of @_
+            beep! 'changed _'"
     " style="font-size: 300px;">😃</div>
 
     <button _="on click call _hyperscript.processNode(document.body)">Process</button>
